@@ -42,6 +42,7 @@ $(function () {
               parseInt(canitdadbd) - parseInt(cantidadCarrito);
             productos[y].cantidad = canitdadtotal;
             localStorage.setItem("productos", JSON.stringify(productos));
+            alert("compra realizada con exito");
           }
         }
       }
