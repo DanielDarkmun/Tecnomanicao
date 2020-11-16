@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TecnoManiaco</title>
+  </head>
+
+  <body class="footer-fijo is-flex is-flex-direction-column">
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <a href="index.html" class="navbar-item"
+              ><img src="img/logo.png" class="logo" srcset=""
+            /></a>
+            <div class="navbar-burger burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-star is-flex is-align-items-center">
+              <div class="navbar-item navbar-buscador">
+                <div class="field">
+                  <p class="control has-icons-right">
+                    <input class="input" type="text" placeholder="Buscar..." />
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="navbar-item btn-buscador">
+                  <button class="button">Buscar</button>
+                </div>
+              </div>
+            </div>
+            <!--Navbar start-->
+            <div class="navbar-end is-flex-direction-column">
+              <a href="#" class="navbar-item"
+                ><i class="fas fa-user mr-1"></i>Iniciar Sesión</a
+              >
+              <div class="navbar-item dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button
+                    class="button"
+                    aria-haspopup="true"
+                    aria-controls="dropdown-menu4"
+                  >
+                    <span
+                      ><i class="fas fa-info-circle mr-1"></i>Centro de
+                      información</span
+                    >
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu t-64" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <a href="#">Contacto</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="#">Devoluciones</a>
+                    </div>
+                    <div class="dropdown-item">
+                      <a href="#">Preguntas frecuentes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="carrito.html" class="navbar-item"
+                ><i class="fas fa-shopping-cart mr-1"></i>Carrito</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="columns">
+        <div class="column contenido-principal">
+          <h2 class="title is-2 has-text-centered">Memoria ram XPG 2x16</h2>
+          <div class="columns">
+            <div class="column">
+              <img
+                src="img/producto5.jpg"
+                alt="Producot 5"
+                srcset=""
+                id="imgProducto"
+              />
+            </div>
+            <div class="column contenido-producto">
+              <h2 class="subtitle is-2">Descripcion</h2>
+              <p class="descripcion">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                perspiciatis aspernatur doloribus
+              </p>
+              <p class="is-size-4">
+                Precio: $<span class="has-text-weight-bold precio">1600</span>
+              </p>
+              <form class="formulario-pedido mt-4 border p-2">
+                <label class="description">Cantidad </label>
+                <input
+                  id="cantidad1"
+                  type="number"
+                  min="1"
+                  class="cantidad campo"
+                  value="1"
+                />
+                <button
+                  type="button"
+                  class="button is-primary"
+                  data-id="4"
+                  id="agregarCarritoBtn"
+                >
+                  Agregar al Carrito
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Tecnomaniaco.</p>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script src="js/bdProductos.js"></script>
+    <script src="js/Agregarcarrito.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
