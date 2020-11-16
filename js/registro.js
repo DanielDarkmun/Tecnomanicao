@@ -41,7 +41,6 @@ btnReferenciado.addEventListener("click", () => {
     var lista = localStorage.getItem("usuarios")
     lista = JSON.parse(lista)
     var carrito = [];
-    console.log(lista[1].nombre == usuario);
     for(var x = 0; x<lista.length;x++)
     {
         if(usuario == lista[x].nombre)
